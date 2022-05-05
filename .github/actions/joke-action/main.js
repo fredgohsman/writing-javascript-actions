@@ -1,4 +1,4 @@
-import getJoke from './joke'
+import getJoke from './joke.js'
 import { setOutput } from '@actions/core'
 
 async function run() {
