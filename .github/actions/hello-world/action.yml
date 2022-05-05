@@ -1,0 +1,24 @@
+name: "my hello action"
+
+author: 'Fred Gohsman'
+
+description: "say hello with GitHub Actions"
+
+runs:
+  using: "node12"
+  main: "main.js"
+
+inputs:
+  name:
+    description: 'Your name'
+    required: false
+    default: 'Adam'
+
+outputs:
+  meaningOfLife:
+    description: 'What is the meaning of life?'
+    value: '42'
+
+branding:
+  icon: 'award'
+  color: 'green'
