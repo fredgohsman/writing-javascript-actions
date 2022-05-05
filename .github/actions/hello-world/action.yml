@@ -1,0 +1,33 @@
+name: "my hello action"
+
+author: 'Fred Gohsman'
+
+description: "say hello with GitHub Actions"
+
+runs:
+  using: "node12"
+  main: "main.js"
+
+inputs:
+  first-greeting:
+    description: "who would you like to greet in the console"
+    required: true
+    default: "Hubot"
+
+  second-greeting:
+    description: "another person to greet"
+    required: true
+    default: "Mona the Octocat"
+
+  third-greeting:
+    description: "a third greeting"
+    required: false
+
+outputs:
+  meaningOfLife:
+    description: 'What is the meaning of life?'
+    value: '42'
+
+branding:
+  icon: 'award'
+  color: 'green'
